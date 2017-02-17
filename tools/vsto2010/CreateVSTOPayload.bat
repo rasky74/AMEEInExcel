@@ -2,8 +2,8 @@ ECHO OFF
 SET ProgFiles=%ProgramFiles%
 SET ProgFilesx86=%ProgramFiles(x86)%
 IF "%PROCESSOR_ARCHITECTURE%"=="x86" Set ProgFilesx86=%ProgramFiles%
-@Echo Progfiles location is %ProgFiles% 
-@Echo Progfiles_x86 location is %ProgFilesx86% 
+@Echo Progfiles location is %ProgFiles%
+@Echo Progfiles_x86 location is %ProgFilesx86%
 @Echo Copying required VSTO Files 
 @Echo VSTO/VSTA 
 xcopy "%ProgFiles%\Reference Assemblies\Microsoft\VSTA30" "Payload\Program Files\Reference Assemblies\Microsoft\VSTA30" /i /S 
